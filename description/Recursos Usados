@@ -1,0 +1,51 @@
+# Projeto "Sobre Mim" - Portfólio Pessoal
+
+Este é um projeto de um site estático e responsivo que serve como um portfólio pessoal e independente. O principal objetivo da página é apresentar informações sobre mim de forma estruturada, limpa e elegante, divididas em seções de perfil (Música, Amigos, Família e Desenvolvimento Web).
+
+---
+
+## 📁 Estrutura do Projeto
+
+O repositório está organizado da seguinte forma:
+
+ Sobre-Mim/
+ ├── fonts/            # Arquivos locais contendo a fonte customizada (Permanent Marker)
+ ├── images/           # Imagens dos cartões e de plano de fundo do cabeçalho
+ ├── index.html        # Estrutura de marcação e conteúdo HTML5 do site
+ └── style.css         # Folha de estilo externa com regras de design CSS3
+
+---
+
+## 🛠️ Tecnologias e Recursos Utilizados
+
+### 1. Estruturação e Semântica (HTML5)
+* **Elementos Semânticos Estruturais:** Utilização das tags `<header>`, `<section>` e `<footer>` para garantir melhor legibilidade do código e acessibilidade.
+* **Semântica de Conteúdo Textual:** Uso estrito de títulos estruturados (`<h1>` para o título principal, `<h2>` para os títulos internos) e parágrafos (`<p>`), eliminando a utilização incorreta de `<div>` para textos soltos.
+* **Acessibilidade Prática:** Aplicação obrigatória do atributo `alt` em todas as imagens dos cartões para fornecer descrições textuais acessíveis.
+* **Organização de Contêineres:** Uso de elementos `<div>` específicos para agrupar e modularizar os cartões de conteúdo.
+* **Uso de Classes:** Identificação consistente de elementos com o atributo `class` para garantir uma estilização CSS padronizada e limpa.
+
+### 2. Estilização, Tipografia e Layout (CSS3)
+* **Carregamento Local de Fontes (@font-face):** Importação e renderização direta da fonte customizada `"Permanent Marker", cursive` a partir da pasta local do projeto.
+* **Reset de Margens e Estilos:** Limpeza e redefinição dos espaçamentos, tamanhos e pesos de fontes nativos do navegador aplicados ao `<body>` e elementos de texto.
+* **Gerenciamento do Box Model:**
+  * Uso de `box-sizing: border-box;` aplicado de forma global via seletor universal (`*`), evitando que preenchimentos (`padding`) ou bordas aumentem o tamanho total planejado dos blocos.
+  * Controle minucioso de preenchimentos (`padding`) e margens (`margin`) para distribuição espacial dos blocos.
+  * Efeito tridimensional nos cartões configurado com `box-shadow`.
+* **Tratamento de Imagens e Planos de Fundo:**
+  * Cabeçalho configurado com imagem de plano de fundo responsiva (`background-image`), utilizando `background-size` e `background-position` para evitar distorções.
+  * Máscara semitransparente sobreposta à imagem do cabeçalho (`.overlay` com `background-color` em RGBA) para garantir legibilidade de leitura do título.
+  * Redimensionamento inteligente de imagens com `width: 100%`, `height: 200px` e `object-fit: contain` nos cartões para preservar a proporção dos arquivos originais.
+* **Layout Fluido com Flexbox:**
+  * Centralização vertical e horizontal perfeita do título principal do site por meio de propriedades Flexbox.
+  * Alinhamento de cartões na seção de conteúdo usando `display: flex;`, `flex-wrap: wrap;` e `justify-content: space-between;` para garantir a quebra e distribuição limpa dos cartões de perfil em duas colunas.
+  * Centralização da assinatura do desenvolvedor no rodapé usando `display: flex;` e margens automáticas.
+
+---
+
+## 📐 Diretrizes de Qualidade e Boas Práticas Atendidas
+
+* **Zero Rolagem Horizontal:** Controle preciso de larguras máximas (`max-width: 790px` na área de conteúdo e `max-width: 1240px` no cabeçalho) para impedir que barras de rolagem lateral incômodas apareçam em resoluções de computadores.
+* **Compatibilidade Garantida:** Layout testado e renderizado corretamente nos principais navegadores modernos (**Google Chrome** e **Mozilla Firefox**).
+* **Espaçamentos Estáveis:** Exclusão total do uso de margens ou preenchimentos negativos no código CSS, mantendo o posicionamento no fluxo padrão.
+* **Uso Consciente da Altura:** Alturas fixas foram aplicadas apenas onde estritamente necessário (como as imagens e a viewport de tela cheia do cabeçalho com `100vh`), garantindo que textos fluidos não sofram cortes indesejados.
