@@ -1,0 +1,14 @@
+Esse é o primeiro projeto feito dentro da escola de Bootcamp de Desenvolvedor WEB.
+A ideia é fazer um site sobre mim, página única, usando tecnologias de HTML5 e CSS3. 
+
+Começo dia 09/07/2026.
+
+Pastas: 
+
+- Description: são explicações do projeto.
+- Style: são todas as páginas de estilização do projeto.
+- Images: guarda todas as imagens a serem carregadas dentro do projeto.
+
+Páginas:
+
+- Index.html: folha inicial da página.

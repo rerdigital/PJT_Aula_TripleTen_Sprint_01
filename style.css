@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(fonts/PermanentMarker.ttf) format("truetype"),
+    url(fonts/PermanentMarker.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter.ttf) format("truetype");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.no-right-border {
+  border-right: none;
+}
+
+
+/* regras para o menu da página */
+.header {
+  height: 100vh;
+  background-image: url("images/foto_capa.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.page-title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 140px;
+  line-height: 140px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  max-width: 1240px;
+  margin: auto;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+/* regras para as sessões de cards */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card {
+  width: 350px;
+  background: #ffffff;
+  padding: 45px 45px 70px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, 0.4);
+  
+  
+}
+
+.card_title{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card_text{
+  font-size: 16px;
+}
+
+.card_image{
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  height: 200px;
+  object-fit: contain;
+}
+
+/* regras para o rodapé */
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #000000;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  margin: auto;
+}
